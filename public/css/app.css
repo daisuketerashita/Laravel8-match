@@ -21745,18 +21745,32 @@ body {
   color: #c3c7d0;
 }
 .usershowPage .userAction_common > a {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   color: #c3c7d0;
   text-decoration: none;
-  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
   transition: color 0.5s;
 }
 .usershowPage .userAction_common > a:hover {
   color: #fd5068;
+}
+
+.userEditPage .header {
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  background: #fd5068;
+  color: #fff;
+}
+.userEditPage .submitBtn {
+  background: #fd5068;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 90px;
+  transition: opacity 0.5s;
+}
+.userEditPage .submitBtn:hover {
+  opacity: 0.6;
 }
