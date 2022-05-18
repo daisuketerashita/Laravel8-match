@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::group([
+    'prefix' => 'users',
+    'middleware' => 'auth'
+],function(){
+    Route::get('show/{id}',[UserController::class,'show'])->name('users.show');
+});
 
 Route::get('/', function () {
     return view('top');
