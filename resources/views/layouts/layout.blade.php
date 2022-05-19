@@ -12,12 +12,19 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jTinder.css') }}">
 </head>
 <body>
 
     @yield('content')
 
     <!-- Scripts -->
+    <!-- transform2d lib -->
+    <script type="text/javascript" src="{{ asset('js/jquery.transform2d.js') }}"></script>
+    <!-- jTinder lib -->
+    <script type="text/javascript" src="{{ asset('js/jquery.jTinder.js') }}"></script>
+    <!-- jTinder initialization script -->
+    <script>$("#tinderslide").jTinder();</script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
